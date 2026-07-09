@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ask Hank — Answers by Telephone | Cachet Capital LLC</title>
+<meta name="description" content="Ask Hank is a telephone answer line. Call (315) 856-3314 and ask Hank anything — no computer or internet needed. First 5 minutes free, then $5/month.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FDFCF7;
+    --ink:#20242B;
+    --bell:#1E4B8F;
+    --bell-deep:#143562;
+    --stamp:#B23A2E;
+    --rule:#D8D2C4;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Source Sans 3",Arial,sans-serif;
+    font-size:1.06rem;
+    line-height:1.65;
+  }
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px}
+
+  /* Masthead */
+  header{
+    border-bottom:3px double var(--bell);
+    padding:20px 0 14px;
+  }
+  .masthead{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px}
+  .brand{
+    font-family:"Zilla Slab",Georgia,serif;
+    font-weight:700;font-size:1.5rem;color:var(--bell-deep);
+    letter-spacing:.01em;
+  }
+  .brand .bell{color:var(--stamp)}
+  .tagline{font-size:.85rem;text-transform:uppercase;letter-spacing:.14em;color:#6B6B60}
+
+  /* Hero — directory listing */
+  .hero{padding:64px 0 48px;text-align:center}
+  .hero h1{
+    font-family:"Zilla Slab",Georgia,serif;
+    font-weight:600;
+    font-size:clamp(1.7rem,4.5vw,2.6rem);
+    color:var(--ink);
+    max-width:640px;margin:0 auto 10px;
+    line-height:1.25;
+  }
+  .hero p.sub{max-width:560px;margin:0 auto;color:#4A4E56}
+  .listing{
+    margin:38px auto 0;
+    max-width:620px;
+    border:2px solid var(--ink);
+    background:#fff;
+    box-shadow:6px 6px 0 var(--rule);
+    padding:26px 22px 28px;
+  }
+  .listing .call{
+    font-size:.8rem;letter-spacing:.28em;text-transform:uppercase;
+    color:var(--stamp);font-weight:600;
+  }
+  .listing a.number{
+    display:block;
+    font-family:"Zilla Slab",Georgia,serif;
+    font-weight:700;
+    font-size:clamp(2.2rem,8vw,3.6rem);
+    color:var(--bell);
+    text-decoration:none;
+    letter-spacing:.02em;
+    margin:4px 0 6px;
+    font-variant-numeric:tabular-nums;
+  }
+  .listing a.number:hover,.listing a.number:focus{color:var(--bell-deep)}
+  .listing .free{
+    display:inline-block;
+    border:1.5px solid var(--stamp);
+    color:var(--stamp);
+    font-weight:600;font-size:.9rem;
+    padding:3px 12px;
+    transform:rotate(-1.5deg);
+    text-transform:uppercase;letter-spacing:.08em;
+  }
+
+  /* Sections */
+  section{padding:44px 0;border-top:1px solid var(--rule)}
+  h2{
+    font-family:"Zilla Slab",Georgia,serif;
+    font-weight:600;font-size:1.45rem;color:var(--bell-deep);
+    margin-bottom:18px;
+  }
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .step{border-top:3px solid var(--bell);padding-top:12px}
+  .step b{display:block;font-family:"Zilla Slab",Georgia,serif;font-size:1.08rem;margin-bottom:4px}
+  .uses{columns:2;column-gap:40px;list-style:none}
+  .uses li{padding:6px 0 6px 22px;position:relative;break-inside:avoid}
+  .uses li::before{content:"☎";position:absolute;left:0;color:var(--stamp);font-size:.9rem}
+
+  /* Pricing */
+  .price-card{
+    border:2px solid var(--ink);background:#fff;
+    box-shadow:6px 6px 0 var(--rule);
+    padding:24px;max-width:520px;
+  }
+  .price-card .amount{
+    font-family:"Zilla Slab",Georgia,serif;font-weight:700;
+    font-size:2.4rem;color:var(--bell);
+  }
+  .price-card .amount span{font-size:1rem;color:var(--ink);font-weight:600}
+  .price-card ul{list-style:none;margin-top:10px}
+  .price-card li{padding:5px 0 5px 24px;position:relative}
+  .price-card li::before{content:"—";position:absolute;left:0;color:var(--stamp)}
+  .fineprint{font-size:.85rem;color:#6B6B60;margin-top:14px}
+
+  footer{
+    border-top:3px double var(--bell);
+    margin-top:20px;padding:26px 0 40px;
+    font-size:.9rem;color:#4A4E56;
+  }
+  footer .cols{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+  footer h3{font-family:"Zilla Slab",Georgia,serif;font-size:1rem;color:var(--ink);margin-bottom:4px}
+  footer a{color:var(--bell)}
+
+  a:focus-visible{outline:3px solid var(--stamp);outline-offset:3px}
+
+  @media (max-width:680px){
+    .steps{grid-template-columns:1fr}
+    .uses{columns:1}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap masthead">
+    <div class="brand"><span class="bell">☎</span> Ask Hank</div>
+    <div class="tagline">A service of Cachet Capital LLC · Penn Yan, New York</div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="hero">
+      <h1>Answers to your questions, as close as your telephone.</h1>
+      <p class="sub">Hank is a friendly answer line you can call from any phone — no computer,
+      no internet, no waiting on hold. Ask him anything, plain and simple.</p>
+
+      <div class="listing">
+        <div class="call">Call any time, day or night</div>
+        <a class="number" href="tel:+13158563314">(315) 856‑3314</a>
+        <div class="free">Your first 5 minutes are free</div>
+      </div>
+    </div>
+
+    <section id="how">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step"><b>1. Call the number</b>
+          Dial (315) 856‑3314 from any telephone — landline or cell. Hank picks up right away.</div>
+        <div class="step"><b>2. Ask your question</b>
+          Talk to Hank like you'd talk to a knowledgeable neighbor. He listens and answers in plain English.</div>
+        <div class="step"><b>3. Keep him handy</b>
+          Like the service? Sign up right on the phone with your card, and call back whenever you need him.</div>
+      </div>
+    </section>
+
+    <section id="uses">
+      <h2>What folks ask Hank</h2>
+      <ul class="uses">
+        <li>Weather and planting questions</li>
+        <li>Prices, measurements, and figuring</li>
+        <li>Recipes and cooking amounts</li>
+        <li>Health and first-aid information</li>
+        <li>How to fix or build something</li>
+        <li>Words, spelling, and letter writing</li>
+        <li>History, geography, and general knowledge</li>
+        <li>Business and bookkeeping questions</li>
+      </ul>
+    </section>
+
+    <section id="pricing">
+      <h2>Plain pricing</h2>
+      <div class="price-card">
+        <div class="amount">$5 <span>per month</span></div>
+        <ul>
+          <li>10 minutes of talk time included every month</li>
+          <li>50¢ per minute after that — only pay for what you use</li>
+          <li>Sign up by phone with a credit or debit card</li>
+          <li>No contract — cancel any time by calling</li>
+        </ul>
+        <p class="fineprint">Every new caller gets 5 free minutes to try Hank before signing up.
+        Charges appear from Cachet Capital LLC.</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <h3>Ask Hank</h3>
+      Operated by Cachet Capital LLC<br>
+      Penn Yan, New York
+    </div>
+    <div>
+      <h3>Contact</h3>
+      Telephone: <a href="tel:+13158563314">(315) 856‑3314</a><br>
+      Email: <a href="mailto:heyhank101@gmail.com">heyhank101@gmail.com</a>
+    </div>
+    <div>
+      <h3>The fine print</h3>
+      Hank is an automated assistant; his answers are for general information<br>
+      and aren't professional medical, legal, or financial advice.<br>
+      © 2026 Cachet Capital LLC. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
